@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="stylesheets/favicon.png">
+    <!--JQuery-->
+    <script src='jquery-3.2.1.min.js'></script>
+    <!--Font Kit-->
+    <link rel="stylesheet" href="https://use.typekit.net/wzc2zuw.css">
+    <title>Slam Dunk</title>
+</head>
+<body>
+
+<!--Navbar-->  
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #1A1A1A;">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/slamball.png" width="40" height="40" alt="" loading="lazy">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="schedules.html">Schedules</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="scores.html">Scores</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="games.html">Games</a>
+          </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="news.html">News</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Leagues
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">WNBA</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">NBA G League</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">NBA 2K League</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--Header-->  
+  <div class="hero-image" id="newsbanner">
+    <div class="hero-text">
+      <p>News</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+<!--News Grid-->  
+<div class="container-lg">
+  <div class="card-deck">
+    <div class="card">
+      <img src="images/news1.png" class="card-img-top" alt="LeBron James">
+      <div class="card-body">
+        <h5 class="card-title">LeBron won’t wear social justice message on Lakers jersey</h5>
+        <p class="card-text" id="cardtextp">LeBron James says his thoughts on social justice can’t be contained on the back of a basketball jersey.</p>
+        <a class="card-text" id="cardtextlink" target=”_blank” href="https://www.foxsports.com/nba/story/lebron-won-t-wear-social-justice-message-on-lakers-jersey-071120"><p class="text-muted">Read More</p></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/news2.png" class="card-img-top" alt="Gregg Popovich">
+      <div class="card-body">
+        <h5 class="card-title">Popovich had reservations, but Spurs coach ready for restart</h5>
+        <p class="card-text" id="cardtextp">Lockdown at Walt Disney World reminded Gregg Popovich of his days as first-year cadet for Air Force Academy.</p>
+        <a class="card-text" id="cardtextlink" target=”_blank” href="https://www.foxsports.com/nba/story/popovich-had-reservations-but-spurs-coach-ready-for-restart-071120"><p class="text-muted">Read More</p></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/news3.png" class="card-img-top" alt="Gregg Popovich">
+      <div class="card-body">
+        <h5 class="card-title">NBA teams at Disney had tough travel-party decisions to make</h5>
+        <p class="card-text" id="cardtextp">The 22 teams participating in the NBA restart were all at the Disney campus together for the first time Friday.</p>
+        <a class="card-text" id="cardtextlink" target=”_blank” href="https://www.foxsports.com/nba/story/nba-teams-at-disney-had-tough-travel-party-decisions-to-make-071020"><p class="text-muted">Read More</p></a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+      <div class="card">
+        <img src="images/news5.png" class="card-img-top" alt="Power Rankings">
+        <div class="card-body">
+          <h5 class="card-title">Power Rankings: Restart Edition</h5>
+          <p class="card-text">As the NBA braces for a July 30 return, where do all 30 teams stand?</p>
+          <a class="card-text" id="cardtextlink" target=”_blank” href="https://www.nba.com/powerrankings/2019-20-restart-edition"><p class="text-muted">Read More</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <img src="images/news4.png" class="card-img-top" alt="NBA Bubble">
+        <div class="card-body">
+          <h5 class="card-title">The Top 22 players inside the NBA 'bubble' in Orlando</h5>
+          <p class="card-text">Question marks will fill the air in the NBA's Orlando "bubble", where teams have arrived as the restart to this NBA season draws near.</p>
+          <a class="card-text" id="cardtextlink" target=”_blank” href="https://www.nba.com/article/2020/07/09/top-22-players-orlando-nba-bubble"><p class="text-muted">Read More</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>

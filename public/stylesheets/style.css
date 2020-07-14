@@ -1,0 +1,174 @@
+a{
+  font-family: prohibition, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.nav-item > a:hover {
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+  }
+
+#aside {
+    width: 38.2%;
+    top: 66px;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    height: 100%;
+    z-index: 555;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+    @media screen and (max-width: 768px) {
+      #fh5co-aside {
+        width: 100%;
+        position: relative;
+        height: 200px; } }
+
+  #main-content {
+    margin-left: 46%;
+    position: relative;
+    z-index: 999;
+    min-height: 600px;
+    padding-top: 160px;
+    padding-left: 100px;
+    padding-right: 70px; }
+    @media screen and (max-width: 768px) {
+      #main-content {
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 15px; } }
+  
+  .dt {
+    display: table; }
+    .dt .dtc {
+      display: table-cell;
+      vertical-align: middle; }
+
+#taglineh2 {
+    text-align: center;
+    font-family: prohibition, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #1A1A1A;
+}
+
+#taglinep {
+    text-align: center;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #1A1A1A;
+}
+
+#logo-cover {
+    margin-left: 22%;
+}
+
+
+body, html {
+  height: 100%;
+}
+
+#schebanner {
+background-image: url("../images/banner.jpg");
+height: 60%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+#scobanner {
+  background-image: url("../images/score.png");
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+
+#newsbanner {
+  background-image: url("../images/news.png");
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+
+  #gambanner {
+  background-image: url("../images/games.png");
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+
+.hero-text {
+text-align: center;
+position: absolute;
+top: 63%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-family: prohibition, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 120px;
+text-shadow: 3px 3px #1F467F;
+}
+
+#inputState {
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+}
+
+#inputtitle {
+  font-family: prohibition, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.table {
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+}
+
+#tabletexttitle {
+  font-family: prohibition, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#cardtextp {
+  text-align: left;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13px;
+  color: #1A1A1A;
+}
+
+#cardtextlink {
+  text-align: right;
+  color: #1f467f;
+  font-family: prohibition, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+}

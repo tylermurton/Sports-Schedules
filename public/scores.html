@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="stylesheets/favicon.png">
+    <!--JQuery-->
+    <script src='jquery-3.2.1.min.js'></script>
+    <!--Font Kit-->
+    <link rel="stylesheet" href="https://use.typekit.net/wzc2zuw.css">
+    <title>Slam Dunk</title>
+</head>
+<body>
+
+<!--Navbar-->  
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #1A1A1A;">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/slamball.png" width="40" height="40" alt="" loading="lazy">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="schedules.html">Schedules</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="scores.html">Scores</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="games.html">Games</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Leagues
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">WNBA</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">NBA G League</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">NBA 2K League</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--Header-->  
+  <div class="hero-image" id="scobanner">
+    <div class="hero-text">
+      <p>Scores</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+<div class="container-lg">
+<!--Search Input-->
+  <form >
+  <div class="form-row">
+    <!--Calendar-->
+    <div class="form-group col-md-4">
+      <label id="inputtitle" for="inputState">Calendar</label>
+      <select id="inputState" class="form-control">
+        <option selected>Month</option>
+        <option>October'19</option>
+        <option>November'19</option>
+        <option>December'19</option>
+        <option>January'20</option>
+        <option>February'20</option>
+        <option>March'20</option>
+        <option>April'20</option>
+      </select>
+    </div>
+    <!--Teams-->
+    <div class="form-group col-md-4">
+      <label id="inputtitle" for="inputState">Teams</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose</option>
+        <option>ATLANTIC</option>
+        <option>Boston Celtics</option>
+        <option>Brooklyn Nets</option>
+        <option>New York Knicks</option>
+        <option>Philadelphia 76ers</option>
+        <option>Toronto Raptors</option>
+        <option>--------------</option>
+        <option>CENTRAL</option>
+        <option>Chicago Bulls</option>
+        <option>Cleveland Cavaliers</option>
+        <option>Detroit Pistons</option>
+        <option>Indiana Pacers</option>
+        <option>Milwaukee Bucks</option>
+        <option>--------------</option>
+        <option>SOUTHEAST</option>
+        <option>Atlanta Hawks</option>
+        <option>Charlote Hornets</option>
+        <option>Miami Heat</option>
+        <option>Orlando Magic</option>
+        <option>Washington Wizards</option>
+        <option>--------------</option>
+        <option>NORTHWEST</option>
+        <option>Denver Nuggets</option>
+        <option>Minnesota Timberwolves</option>
+        <option>Oklahoma City Thunder</option>
+        <option>Portland Trail Blazers</option>
+        <option>Utah Jazz</option>
+        <option>--------------</option>
+        <option>PACIFIC</option>
+        <option>Golden State Warriors</option>
+        <option>LA Clippers</option>
+        <option>Los Angeles Lakers</option>
+        <option>Phoenix Suns</option>
+        <option>Sacramento Kings</option>    
+        <option>--------------</option>
+        <option>SOUTHWEST</option>
+        <option>Dallas Mavericks</option>
+        <option>Houstons Rockets</option>
+        <option>Memphins Grizzlies</option>
+        <option>New Orleans Pelicans</option>
+        <option>San Antonio Spurs</option>  
+      </select>
+    </div>
+    <!--Leagues-->
+    <div class="form-group col-md-4">
+      <label id="inputtitle" for="inputState">Leagues</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose</option>
+        <option>NBA</option>
+        <option>WNBA</option>
+      </select>
+    </div>
+  </div>
+</form>
+
+<br>
+
+<!--Table-->
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" id="tabletexttitle">Date</th>
+      <th scope="col" id="tabletexttitle">Time</th>
+      <th scope="col" id="tabletexttitle">Home</th>
+      <th scope="col" id="tabletexttitle">Away</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+    
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
