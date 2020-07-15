@@ -21,4 +21,12 @@ router.get('/schedules', (req, res) => {
   });
 });
 
+router.get('/scores', (req, res) => {
+  console.log("get /");
+  db.Games.findAll({}).then(function(data) {
+    console.log('data', data)
+    res.render('scores', { games: data })
+  });
+});
+
 module.exports = router;
