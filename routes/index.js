@@ -17,7 +17,7 @@ router.get('/schedules', (req, res) => {
   console.log("get /");
   db.Games.findAll({}).then(function(data) {
     console.log('data', data)
-    res.render('index', { games: data })
+    res.render('schedules', { games: data })
   });
 });
 
