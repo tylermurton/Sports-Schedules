@@ -27,9 +27,6 @@ app.set("view engine", "handlebars");
 
 app.use('/', routes);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/main.html'));
-});
 
 // Sync sequelize models then start Express app
 // =============================================
