@@ -62,7 +62,7 @@ router.get('/scores', (req, res) => {
     console.log("Comment Data:");
     console.log(req.body);
 
-    Comment.create({
+    db.Comment.create({
       author: req.body.author,
       body: req.body.body,
       created_at: req.body.created_at

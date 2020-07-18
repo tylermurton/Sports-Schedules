@@ -47,7 +47,7 @@ $("#submit-comment").on("click", function(event) {
   
         row.append("<p>" + data[i].author + " commented: </p>");
         row.append("<p>" + data[i].body + "</p>");
-        row.append("<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>");
+        row.append("<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "<hr>" + "</p>");
   
         $("#comment-area").prepend(row);
   
