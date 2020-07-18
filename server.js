@@ -1,7 +1,8 @@
 const express = require('express');
 require('dotenv').config()
 const db = require('./models/index.js');
-const routes = require('./routes');
+// const routes = require('./routes');
+const routes = require('./routes/api-routes.js');
 const path = require('path');
 const seeds = require('./seeds.js');
 const PORT = process.env.PORT || 8080;

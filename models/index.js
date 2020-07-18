@@ -30,6 +30,20 @@ Object.keys(db).forEach(function(modelName) {
   }
 });
 
+
+// Creates a "comment" model that matches up with DB
+var Comment = sequelize.define("comment", {
+  author: Sequelize.STRING,
+  body: Sequelize.STRING,
+  created_at: Sequelize.DATE
+});
+
+// Syncs with DB
+Comment.sync({ force: true });
+
+// Makes the Comment Model available for other files (will also create a table)
+module.exports = Comment;
+
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
